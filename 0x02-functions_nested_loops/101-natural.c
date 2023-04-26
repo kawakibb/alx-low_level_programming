@@ -6,7 +6,7 @@
 *
 * Return: Always 0.
 * author kawakib
-* /
+*/
 	int main(void)
 	{
 		int i, sum = 0;

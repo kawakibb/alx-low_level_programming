@@ -3,6 +3,7 @@
 /**
 * print_alphabet - write  all alphabet in lowercase
 * Return: 0 success.
+* author kawakibb
 */
 
 

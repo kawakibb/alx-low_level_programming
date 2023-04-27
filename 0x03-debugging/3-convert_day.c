@@ -11,7 +11,7 @@
 int convert_day(int month, int day)
 {
 	switch (month)
-    {
+	{
 	case 2:
 	day = 31 + day;
 	break;
@@ -42,7 +42,7 @@ int convert_day(int month, int day)
 	case 11:
 	day = 304 + day;
 	break;
-	 case 12:
+	case 12:
 	day = 334 + day;
 	break;
 	default:

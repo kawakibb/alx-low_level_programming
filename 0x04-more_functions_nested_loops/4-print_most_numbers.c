@@ -2,7 +2,6 @@
 
 /**
  * print_most_numbers -  character is digit
- * @c: The value of digit
  * Return: 1 if digit or 0 if not
  */
 void print_most_numbers(void)
@@ -13,7 +12,7 @@ void print_most_numbers(void)
 	{
 	if (c == '2' || c == '4')
 	{
-		
+
 	}
 	else
 	{

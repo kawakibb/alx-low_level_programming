@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _isupper -  letter is upper
  * @c: The value of the letter
@@ -7,7 +8,7 @@
 
 int _isupper(int c)
 {
-if (c <= 90)
+if (c >= 65 && c <= 90)
 {
 	return (1);
 }

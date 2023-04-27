@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper -  digit is upper
+ * _isdigit -  character is digit
  * @c: The value of digit
  * Return: 1 if digit or 0 if not
  */

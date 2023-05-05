@@ -54,7 +54,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			val1 = 0;
 		else
 			val1 = *(n1 + a) - '0';
-		f (b < 0)
+		if (b < 0)
 			val2 = 0;
 		else
 			val2 = *(n2 + b) - '0';

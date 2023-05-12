@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - writ  arguments 
+ * main - writ arguments
  * @argc: nbr arry
  * @argv: array
  *

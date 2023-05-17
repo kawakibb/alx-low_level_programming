@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * str_concat - get inputs and add together
- * @s1: input first nbr
- * @s2: input secind nbr
- * Return: concat of the two previous nbr
+ * str_concat - input together for size
+ * @s1: input nbr one
+ * @s2: input nbr two
+ * Return: concat of s1 and s2
  */
 
 char *str_concat(char *s1, char *s2)
@@ -13,8 +13,10 @@ char *str_concat(char *s1, char *s2)
 	int i, ci;
 
 	if (s1 == NULL)
+	{
 		s1 = "";
-	else if (s2 == NULL)
+	}
+	if (s2 == NULL)
 	{	s2 = "";
 		i = ci = 0;
 	}

@@ -24,7 +24,7 @@
 /**
  *_strcpy - copies the string pointed
  * @dest: pointer to the buffer
- * @src: string 
+ * @src: string
  *
  * Return: the pointer to dest
  */
@@ -48,14 +48,14 @@
 	return (dest);
 	}
 
-	/**
- * new_dog - new dog
- * @name: name dog
- * @age: age dog
- * @owner: owner dog
- *
- * Return: pointer success or NULL
- */
+/**
+* new_dog - new dog
+* @name: name dog
+* @age: age dog
+* @owner: owner dog
+*
+* Return: pointer success or NULL
+*/
 	dog_t *new_dog(char *name, float age, char *owner)
 	{
 	dog_t *dog;

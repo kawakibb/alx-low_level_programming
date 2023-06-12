@@ -11,15 +11,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int ptr;
 	ssize_t byt;
-
-	char buffer{READ_BUF_SIZE * 10};
+	char buffer[READ_BUFFER_SIZE * 10];
 
 	if (!filename || !letters)
-		return (0)
+		return (0);
 	ptr = open(filename, O_RDONLY);
 	if (ptr == -1)
 		return (0);
 	byt = read(ptr, &buffer[0], letters);
-	byt = write(STDOUT_FILENO, &buf[0], byt);
+	byt = write(STDOUT_FILENO, &buffer[0], byt);
 	close(ptr);
+	return (byt);
 }

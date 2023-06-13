@@ -6,7 +6,7 @@
  * @text_content: add a txt in the end of a file.
  *
  * Return: If fails- -1 Otherwise - 1.
- * 
+ *
  */
 int append_text_to_file(const char *filename, char *text_content)
 {

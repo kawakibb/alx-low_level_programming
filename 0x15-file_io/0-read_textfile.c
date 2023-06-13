@@ -1,25 +1,27 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * read_textfile - prints the number of bytes
- * @filename: name of the file
- * @letters: number of bytes to read
- *
- * Return: nbr of bytes
+ * read_textfile- Read and print to STDOUT.
+ * @filename: text file to read
+ * @letters: number lettre to read
+ * Return: w- or 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int ptr;
-	ssize_t byt;
-	char buffer[READ_BUFFER_SIZE * 10];
+	char *buffer;
+	ssize_t value;
+	ssize_t wr;
+	ssize_t tr;
 
-	if (!filename || !letters)
+	value = open(filename, O_RDONLY);
+	if (value == -1)
 		return (0);
-	ptr = open(filename, O_RDONLY);
-	if (ptr == -1)
-		return (0);
-	byt = read(ptr, &buffer[0], letters);
-	byt = write(STDOUT_FILENO, &buffer[0], byt);
-	close(ptr);
-	return (byt);
+	buffer = malloc(sizeof(char) * letters);
+	tr = read(value, buffer, letters);
+	wr = write(STDOUT_FILENO, buffer, tr);
+
+	free(buffer);
+	close(value);
+	return (wr);
 }

@@ -29,7 +29,7 @@ char *create_bufr(char *file)
 
 /**
  * close_file - Closes file -------------------.
- * @valu: The file will be closed.
+ * @fd: The file will be closed.
  */
 void close_file(int fd)
 {

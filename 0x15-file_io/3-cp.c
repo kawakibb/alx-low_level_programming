@@ -28,18 +28,18 @@ char *create_bufr(char *file)
 }
 
 /**
- * close_file - Closes file .
+ * close_file - Closes file -------------------.
  * @valu: The file will be closed.
  */
-void close_file(int valu)
+void close_file(int fd)
 {
 	int c;
 
-	c = close(valu);
+	c = close(fd);
 
 	if (c == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %s\n", valu);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }

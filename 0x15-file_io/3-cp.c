@@ -39,7 +39,7 @@ void close_file(int valu)
 
 	if (c == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close valu %d\n", valu);
+		dprintf(STDERR_FILENO, "Error: Can't close %d\n", valu);
 		exit(100);
 	}
 }

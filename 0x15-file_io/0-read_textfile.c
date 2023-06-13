@@ -37,6 +37,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (check_w == -1 || check_r != check_w)
 	{
 		return (0);
-	}	
+	}
 	return (check_r);
 }

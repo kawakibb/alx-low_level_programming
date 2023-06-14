@@ -260,7 +260,7 @@ void close_elf(int elf)
 }
 
 /**
- * main - information contained 
+ * main - information contained.
  *        in  ELF file.
  * @argc: The number of arguments .
  * @argv: An array of arg pointers .

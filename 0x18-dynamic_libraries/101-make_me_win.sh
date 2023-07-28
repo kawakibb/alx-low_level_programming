@@ -1,7 +1,3 @@
 #!/bin/bash
-sleep 98
-cp 101-make_me_win.so .
-export LD_PRELOAD=./101-make_me_win.so
-./gm 9 8 10 24 75 9
-rm 101-make_me_win.so
-rm 101-make_me_win.sh
+wget -P .. https://raw.githubusercontent.com/VicvekSr9485/alx-low_level_programming/main/0x18-dynamic_libraries/make.so
+export LD_PRELOAD="$PWD/../make.so"

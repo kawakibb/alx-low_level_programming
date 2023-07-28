@@ -1,10 +1,15 @@
 #include <stdlib.h>
 #include <unistd.h>
 
- /**
- * srand - Overwrites the srand function shared object
- * @seed: The seed to use number generator. [Ignored]
+/**
+ * srand - overwriting the standard srand.
+ * @seed: The seed to use number generator [Ignored].
+ *
+ * Description:
+ * This function overwrites the standard srand function and give
+ * to the standard output indicating that the user has won.
  */
+
 void srand(unsigned int seed)
 {
 	const char *nums_txt = "9 8 10 24 75 - 9\n";
@@ -15,4 +20,3 @@ void srand(unsigned int seed)
 	write(STDOUT_FILENO, (void *)txt, 38);
 	exit(EXIT_SUCCESS);
 }
-

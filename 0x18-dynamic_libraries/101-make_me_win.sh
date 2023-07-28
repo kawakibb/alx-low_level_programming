@@ -1,3 +1,7 @@
 #!/bin/bash
-wget -q --output-document=$HOME/lib101-makemewin.so https://github.com/B3zaleel/alx-low_level_programming/raw/main/0x18-dynamic_libraries/lib101-makemewin.so
-export LD_PRELOAD=$HOME/lib101-makemewin.so
+sleep 98
+cp 101-make_me_win.so .
+export LD_PRELOAD=./101-make_me_win.so
+./gm 9 8 10 24 75 9
+rm 101-make_me_win.so
+rm 101-make_me_win.sh
